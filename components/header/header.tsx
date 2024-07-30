@@ -1,11 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const Header = () => {
   return (
     <div>
       <nav>
         <div className="navbar justify-between bg-base-300">
           <Link href="/" className="btn btn-ghost text-lg">
+            <Image
+              src="/images/bmw-logo.png"
+              alt="logo"
+              width={70}
+              height={30}
+            />
             BMW LifeStyle Store
           </Link>
           <ul className="flex">
