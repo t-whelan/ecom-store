@@ -1,7 +1,7 @@
 const data = {
   products: [
     {
-      name: "Free Shirt",
+      name: "BMW Shirt",
       slug: "free-shirt",
       catergory: "Shirts",
       image: "/images/shirt1.jpg",
