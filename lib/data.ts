@@ -1,9 +1,25 @@
+import bcrypt from "bcryptjs";
+
 const data = {
+  users: [
+    {
+      name: "John",
+      email: "admin@example.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: true,
+    },
+    {
+      name: "Jane",
+      email: "admin2@example.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
       name: "BMW Shirt",
       slug: "free-shirt",
-      catergory: "Shirts",
+      category: "Shirts",
       image: "/images/shirt1.jpg",
       price: 270,
       brand: "BMW",
@@ -17,7 +33,7 @@ const data = {
     {
       name: "Fit Shirt",
       slug: "fit-shirt",
-      catergory: "Shirts",
+      category: "Shirts",
       image: "/images/shirt2.jpg",
       price: 280,
       brand: "BMW",
@@ -31,7 +47,7 @@ const data = {
     {
       name: "Slim Shirt",
       slug: "slim-shirt",
-      catergory: "Shirts",
+      category: "Shirts",
       image: "/images/shirt3.jpg",
       price: 570,
       brand: "BMW",
@@ -45,7 +61,7 @@ const data = {
     {
       name: "sweat Pants",
       slug: "sweat-pants",
-      catergory: "Pants",
+      category: "Pants",
       image: "/images/pants1.jpg",
       price: 770,
       brand: "Puma",

@@ -4,14 +4,14 @@ import { OrderItem, ShippingAddress } from "../models/OrderModel";
 import { persist } from "zustand/middleware";
 
 type Cart = {
-  items: OrderItem[]
-  itemsPrice: number
-  taxPrice: number
-  shippingPrice: number
-  totalPrice: number
+  items: OrderItem[];
+  itemsPrice: number;
+  taxPrice: number;
+  shippingPrice: number;
+  totalPrice: number;
 
-  paymentMethod: string
-  shippingAddress: ShippingAddress
+  paymentMethod: string;
+  shippingAddress: ShippingAddress;
 };
 const initialState: Cart = {
   items: [],
