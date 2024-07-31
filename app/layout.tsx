@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/header";
+import Providers from "@/components/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,11 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <div className="min-h-screen flex flex-col">{children}</div>
-        <footer className="footer footer-center p-4 bg-base-300 text-base-content">
-          <p>Copyright BMW LIFESTYLE © BMW ZA 2024</p>
-        </footer>
+        <Providers>
+          <Header />
+          <div className="min-h-screen flex flex-col">{children}</div>
+          <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+            <p>Copyright BMW LIFESTYLE © BMW ZA 2024</p>
+          </footer>
+        </Providers>
       </body>
     </html>
   );
