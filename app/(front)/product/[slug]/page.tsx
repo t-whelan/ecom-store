@@ -2,6 +2,7 @@ import data from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
 import { Product } from "@/lib/models/ProductModel";
+import AddToCart from "@/components/products/AddToCart";
 
 export default function ProductDetails({
   params,
@@ -62,10 +63,15 @@ export default function ProductDetails({
               {product.CountInStock > 0 ? "In stock" : "Unavailable"}
             </div>
           </div>
-          <div className="cart-actions justify-center">
-           <button className="btn btn-primary w-full type" type="button">
-            Add to cart
-            </button>
+          <div className="card-actions justify-center">
+            <AddToCart
+              item={{
+                ...product,
+                qty: 0,
+                color: "",
+                size: "",
+              }}
+            />
           </div>
         </div>
       </div>
