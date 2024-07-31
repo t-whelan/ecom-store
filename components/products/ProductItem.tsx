@@ -11,8 +11,8 @@ export default function ProductItem({ product }: { product: Product }) {
           <Image
             src={product.image}
             alt={product.name}
-            width={300}
-            height={300}
+            width={600}
+            height={600}
             className="object-cover h-64 w-full"
           />
         </Link>

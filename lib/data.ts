@@ -25,7 +25,7 @@ const data = {
       brand: "BMW",
       rating: 4.5,
       numReviews: 8,
-      CountInStock: 20,
+      countInStock: 20,
       description: "A popular Shirt",
       isfeatured: true,
       banner: "/images/banner.jpg",

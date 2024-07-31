@@ -36,7 +36,7 @@ export type Product = {
   category: string;
   rating: number;
   numReviews: number;
-  countInStock?: number;
+  countInStock: number;
   colors?: [];
   sizes?: [];
 };
