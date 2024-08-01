@@ -6,7 +6,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Menu = () => {
-  const { items } = useCartService();
+  const { items, init } = useCartService();
   const { data: session } = useSession(); // Get session data
   const [mounted, setMounted] = useState(false);
 
@@ -16,6 +16,7 @@ const Menu = () => {
 
   const signoutHandler = () => {
     signOut({ callbackUrl: "/signin" });
+    init();
   };
 
   const handleClick = (
