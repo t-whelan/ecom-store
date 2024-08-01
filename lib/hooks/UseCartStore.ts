@@ -117,3 +117,4 @@ const calcPrice = (items: OrderItem[]) => {
     totalPrice = round2(itemsPrice + shippingPrice + taxPrice);
   return { itemsPrice, shippingPrice, taxPrice, totalPrice };
 };
+
