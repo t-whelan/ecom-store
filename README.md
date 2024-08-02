@@ -1,11 +1,12 @@
 #Live Link
 https://ecom-store-sandy-xi.vercel.app/
 
-<img src="./public/images/Screenshot(1).png" alt="preview"/>
 
-Full-ECommerce By Next.js 13+, App Router, Server Components and Actions
+Full-ECommerce By Next.js 13+, App Router, Server Components and Actions.
+<img src ="Screenshot-1.png" alt="logo"/>
 
-Tech
+
+Tech used:
 
 - Nextjs 13+, Server Components & Actions, Route Handler
   UI
